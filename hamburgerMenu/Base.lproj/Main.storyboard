@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dlm-x7-xCK">
+                                <rect key="frame" x="16" y="20" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="rRH-ap-D7A"/>
+                                    <constraint firstAttribute="height" constant="50" id="voj-bR-Frl"/>
+                                </constraints>
+                                <state key="normal" image="burger">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="burgerDidPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mS2-40-4gZ"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="H0b-tL-Li4">
+                                <rect key="frame" x="0.0" y="78" width="480" height="522"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CELL" id="gVV-vL-Wxf">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gVV-vL-Wxf" id="8J0-Z3-wiD">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="H0b-tL-Li4" firstAttribute="top" secondItem="Dlm-x7-xCK" secondAttribute="bottom" constant="8" id="8Dz-Ja-ogL"/>
+                            <constraint firstItem="Dlm-x7-xCK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Fkt-om-ZzS"/>
+                            <constraint firstItem="H0b-tL-Li4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="NPA-ln-Jue"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="H0b-tL-Li4" secondAttribute="bottom" id="aJg-vk-hAs"/>
+                            <constraint firstItem="H0b-tL-Li4" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="cjq-Z9-pot"/>
+                            <constraint firstItem="Dlm-x7-xCK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="iqh-MD-Yiw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="burgerButton" destination="Dlm-x7-xCK" id="wCu-tu-7xn"/>
+                        <outlet property="tableView" destination="H0b-tL-Li4" id="a1V-Cr-0So"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WT8-Gk-HK8">
+            <objects>
+                <viewController id="YYB-WN-gba" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="p7S-pz-KmI"/>
+                        <viewControllerLayoutGuide type="bottom" id="n4y-1R-YKN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZEy-qS-JUQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XP1-qn-nNs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="255" y="1003"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ewO-tW-HX7">
+            <objects>
+                <viewController storyboardIdentifier="BURGER_VC" id="cUf-KK-FG4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qzg-1A-nYO"/>
+                        <viewControllerLayoutGuide type="bottom" id="TVO-Km-m21"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gOp-N3-kjE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.270588249" green="0.36862745879999997" blue="0.56862747670000002" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qYj-Jb-Mqv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1013" y="320"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="burger" width="24" height="31"/>
+    </resources>
+</document>
